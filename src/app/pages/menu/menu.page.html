@@ -1,0 +1,31 @@
+<ion-split-pane>
+    <ion-menu contentId="content">
+   
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+  
+      <ion-content *ngIf='userReady'>
+        
+          
+            <ion-avatar>
+                <img [src]="user.picture" >
+               
+            </ion-avatar>
+            <p>{{user.name}}</p>
+          
+          <br>
+          <p>{{user.email}}</p><br>
+          <ion-button expand="block" (click)="doFbLogout()">Log Out</ion-button>
+        
+      </ion-content>
+        
+    </ion-menu>
+   
+    <ion-router-outlet id="content" main></ion-router-outlet>
+   
+  </ion-split-pane>
+  
+  

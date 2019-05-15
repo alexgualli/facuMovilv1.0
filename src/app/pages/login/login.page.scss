@@ -1,0 +1,45 @@
+.login-content{
+    --background: rgba(50, 56, 114, 0.856);
+  }
+  
+  .logo {
+    color: white;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  .description {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .hero-image {
+      width: 220px;
+      height: 170px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      img {
+        position: absolute;
+      }
+      .sky {
+        width: 170px;
+        left: 25px;
+        top: 25px;
+      }
+      
+      .ship {
+        width: 160px;
+        bottom: 50px;
+        left: 18px;
+      }
+      .water {
+        width: 170px;
+        bottom: 40px;
+        left: 25px;
+      }
+    }
+  
