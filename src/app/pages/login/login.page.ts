@@ -50,7 +50,7 @@ export class LoginPage {
 					this.router.navigate(["/menu/home"]);
 					loading.dismiss();
 				}, error =>{
-					console.log(error);
+					console.log(error);					
 					loading.dismiss();
 				})
 			})
