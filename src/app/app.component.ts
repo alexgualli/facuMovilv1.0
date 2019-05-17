@@ -6,11 +6,17 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Router } from '@angular/router';
 import { NativeStorage} from '@ionic-native/native-storage/ngx';
 
+
+
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html'
 })
 export class AppComponent {
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -20,7 +26,7 @@ export class AppComponent {
     private router: Router
   ) {
 
-      this.platform.ready().then(() => {
+      /*this.platform.ready().then(() => {
         this.nativeStorage.getItem('facebook_user').then(data => {
           this.router.navigate(["/menu/home"]);
           this.splashScreen.hide();
@@ -32,7 +38,7 @@ export class AppComponent {
 
         this.statusBar.styleDefault();
       });
-
+*/
 
   }
 
@@ -42,4 +48,7 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+
+  
 }
