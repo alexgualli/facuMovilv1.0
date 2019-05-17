@@ -63,6 +63,12 @@ export class MenuPage implements OnInit {
 		});
 	}
 
+
+	goSetting(){
+
+			this.router.navigate(['/setting']);
+
+	}
 	doFbLogout(){
 		this.fb.logout()
 		.then(res =>{
